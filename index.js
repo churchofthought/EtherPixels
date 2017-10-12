@@ -7,7 +7,8 @@ setTimeout(function(){
 		for (var y = 0; y < 128; ++y){
 			((x,y) => web3.eth.getStorageAt(contractAddr, 128 * x + y + 2, (err, color) => {
 				for (var i = 1; i <= 8; ++i){
-					ctx.fillStyle = "#" + color.slice(2, 2 + 8*i);
+					ctx.fillStyle = "#000000";
+					//ctx.fillStyle = "#" + color.slice(2, 2 + 8*i);
 					ctx.fillRect(x, 8*y + 8 - i, 1, 1);
 				}
 			}))(x,y);
