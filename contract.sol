@@ -1,7 +1,7 @@
 pragma solidity ^0.4;
 contract MillionPixelPage {
     address owner = msg.sender;
-    uint pricePerPixel = 1 finney; // 0.001 ether
+    uint public pricePerPixel = 1 finney; // 0.001 ether
     uint32[1024][1024] internal pixels;
     
     modifier onlyOwner {
