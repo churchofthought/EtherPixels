@@ -2,7 +2,7 @@ const contractAddr = "0x18e1438312262214db7ad40def5542f9e783560a";
 const cvs = document.getElementById("cvs");
 const ctx = cvs.getContext("2d");
 
-window.onload = function(){
+setTimeout(function(){
 	for (var x = 0; x < 2; ++x){
 		for (var y = 0; y < 2; ++y){
 			((x,y) => web3.eth.getStorageAt(contractAddr, 128 * x + y + 2, (err, color) => {
@@ -13,4 +13,4 @@ window.onload = function(){
 			}))(x,y);
 		}
 	}
-};
+}, 1000);
