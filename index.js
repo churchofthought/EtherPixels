@@ -38,9 +38,9 @@ function cb(err, val){
 			.join("")
 			.split("")
 			.forEach((v, idx) => {
-				const coords = unpair(this.i + idx);
+				const coords = unpair(this.i + idx + 1);
 				ctx.fillStyle = v == "0" ? "#000" : "#fff";
-				ctx.fillRect(coords[0], coords[1], 1, 1);
+				ctx.fillRect(coords[0] - 1, coords[1] - 1, 1, 1);
 			});
 	}
 	if ((++i) == 4096){
