@@ -2,7 +2,7 @@ const contractAddr = "0x18e1438312262214db7ad40def5542f9e783560a";
 const cvs = document.getElementById("cvs");
 const ctx = cvs.getContext("2d");
 
-const numThreads = 4;
+var numThreads = 4;
 
 var i = -1;
 setTimeout(() => {
