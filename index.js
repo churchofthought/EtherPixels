@@ -36,6 +36,7 @@ function cb(err, val){
 			.split("")
 			.map(v => ("000" + parseInt(v,16).toString(2)).slice(-4))
 			.join("")
+			.split("")
 			.forEach((v, idx) => {
 				const coords = unpair(this.i + idx);
 				ctx.fillStyle = v == "0" ? "#000" : "#fff";
