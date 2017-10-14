@@ -45,6 +45,6 @@ function cb(err, val){
 	if ((++i) == 4096){
 		return;
 	}
-	thread.i = i;
+	this.i = i;
 	web3.eth.getStorageAt(contractAddr, i, this.cb);
 }
