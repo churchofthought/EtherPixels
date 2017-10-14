@@ -26,7 +26,7 @@ const unpair = (z) => {
 };
 
 const pair = (x,y) => (
-	(x + y + 1) * (x + y) / 2 + y;
+	(x + y + 1) * (x + y) / 2 + y
 );
 
 function cb(err, val){
