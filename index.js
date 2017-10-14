@@ -2,7 +2,7 @@ const contractAddr = "0x18e1438312262214db7ad40def5542f9e783560a";
 const cvs = document.getElementById("cvs");
 const ctx = cvs.getContext("2d");
 
-var numThreads = 8;
+var numThreads = 3;
 
 var i = -1;
 setTimeout(() => {
@@ -43,7 +43,7 @@ function cb(err, val){
 				ctx.fillRect(coords[0] - 1, coords[1] - 1, 1, 1);
 			});
 	}
-	if ((++i) == 4096){
+	if ((++i) == 1024){
 		return;
 	}
 	this.i = i;
