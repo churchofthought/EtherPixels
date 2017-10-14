@@ -15,10 +15,10 @@ setTimeout(() => {
 
 
 const unpair = (z) => {
-	const w = Math.ceil(
+	const w = Math.floor(
 		(Math.sqrt(8 * z + 1) - 1) / 2
 	);
-	const t = w * (w + 1) / 2;
+	const t = (w*w + w) / 2;
 	const y = z - t;
 	const x = w - y;
 
